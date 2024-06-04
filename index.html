@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>  
+
+    <div>               
+        <h1>Registration Form</h1>
+        <form onsubmit="return validateForm()">
+            <table>
+            <tr>
+                <td>Name:</td> 
+                <td><input type="text" value="" id="txtName" name="txtName" placeholder="Enter Your name" required></td>
+            </tr>
+            <tr>
+                <td>DOB:</td> 
+                <td><input type="date" id="dob" required></td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number" id="age" name="age" placeholder="Enter Your Age" required readonly></td>
+            </tr>
+   
+            <tr>
+                <td>Address:</td> 
+                <td><textarea placeholder="Enter Your Address"></textarea></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td> 
+                <td><input type="tel" id="txtPhoneNumberValid" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="Gender">Male
+                    <input type="radio" name="Gender">Female
+                </td>
+            </tr>
+            <td></td> <td><button type="submit">Submit</button></td>
+            <td></td> <td><button type="reset">Reset</button></td>
+        </table>
+        </form>
+    </div>
+</body>
+</html>
